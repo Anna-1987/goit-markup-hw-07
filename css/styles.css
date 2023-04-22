@@ -249,13 +249,12 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent-color); 
-    margin-bottom: 72px;
    
 }
 .skills-line{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px;
 }
 /* -----SECTION 2-3------ */
 .imeg-line{
@@ -768,7 +767,6 @@ body {
 }
 
 .checkbox-text span{
-    display: flex;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -809,6 +807,7 @@ body {
     margin-top: 24px;
 }
   .modal-link{
+    display:inline-block;
     margin-left: 4px;
     color: var(--iris-color);
   }
@@ -876,11 +875,11 @@ body {
    .soc-list-mob{
     display: flex; 
     justify-content: left;
-    gap: 26px;
+    gap: 32px;
     margin-top: 48px;
    }
 
-  /* -----------------Adaption-------------- */
+  /* -----------------------------------Adaptive------------------------- */
 
   @media screen and (min-width: 480px) {
     .container{
@@ -912,7 +911,11 @@ body {
   .checkbox-text{
     display: flex;
   }
+  .checkbox-tex span{
+    display: flex;
+  }
 }
+/*  ---------------------------------------------------------WIDTH 768 PX------------------------------ */
 
   @media screen and (min-width: 768px) {
     .container{
@@ -954,6 +957,9 @@ body {
     .skills-item {
     flex-basis: calc((100% - 24px) / 2);
     }
+    .skills-line{
+        gap: 72px 24px;
+    }
     .section-three > .container{
         width: 582px;
     }
@@ -965,6 +971,9 @@ body {
         gap: 64px 24px;
     }
     .list-skills-h{
+        text-align: left;
+    }
+    .logo-footer{
         text-align: left;
     }
     .icon-logo{
@@ -985,6 +994,7 @@ body {
     }
     .footer-webstudio{
         margin-bottom: 0;
+
     }
    .icon-line-footer{
         margin-bottom: 0;
@@ -1011,7 +1021,7 @@ body {
     margin-left: 0;
    }
   }
-
+/* -------------------------------------WIDTH 1200 PX---------------------------- */
 
   @media screen and (min-width: 1200px) {
     .container{
@@ -1044,6 +1054,9 @@ body {
 
    .skills-item {
     flex-basis: calc((100% - 72px) / 4);
+   }
+   .skills-line{
+    gap: 24px;
    }
    .icon-skills{
     height: 112px;
